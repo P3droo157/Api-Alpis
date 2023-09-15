@@ -19,9 +19,9 @@ require('dotenv').config()
 
 //_______________________ ┏  Main Setting  ┓ _______________________\\
 
-creator = '乂𝘼𝙡𝙞𝙥乂' // Nama 
+creator = 'ThZ-Frosty' // Nama 
 port = 8080 //port host
-LimitApikey = 200 // Limit Apikey default
+LimitApikey = 1000 // Limit Apikey default
 
 //___________ ┏  Database Mongodb Setting  ┓ ___________\\
 
@@ -58,54 +58,54 @@ loghandler = {
     error: {
         status: false,
         code: 503,
-        message: '[!] Service Unavaible Or Error',
+        message: '[!] Serviço indisponível ou erro',
         maintanied_by: `${creator}`
     },
     noturl: {
     	status: false,
     	code: 403,
-    	message: '[!] Forbiden or Error, Invlid url',
+    	message: '[!] Proibido ou Erro, URL inválido',
     	maintanied_by: `${creator}`
     },
     notfound: {
     	status: false,
     	code: 404,
-    	message: '[!] Forbiden or Error, Not Found',
+    	message: '[!] Proibido ou Erro, Não Encontrado',
     	maintanied_by: `${creator}`
     },
     notid: {
     	status: false,
     	code: 404,
-    	message: '[!] Forbiden or Error, Invalid Id or Zone',
+    	message: '[!] Proibido ou Erro, ID ou Zona Inválida',
     	maintanied_by: `${creator}`
     },
     redy: {
     	status: false,
     	code: 403,
-    	message: '[!] Forbiden or Error, Alias ​​already in use',
+    	message: '[!] Proibido ou Erro, Alias ​​já em uso',
     	maintanied_by: `${creator}`
     },
     emoji: {
 	    status: false,
 	    code: 403,
-	    message: '[!] Forbiden or Error, Emoji not Found',
+	    message: '[!] Proibido ou Erro, Emoji não Encontrado',
 	    maintanied_by: `${creator}`
 	},
     instgram: {
 	    status: false,
 	    code: 403,
-	    message: '[!] Forbiden or Error, Username tidak wujud atau account private',
+	    message: '[!] Proibido ou Erro, Nome de usuário não wujud ou conta privada',
 	    maintanied_by: `${creator}`
    },
     register: {
 	    status: false,
 	    code: 403,
-	    message: '[!] Please Register First',
+	    message: '[!] Por favor, registre-se primeiro',
   },
    verify: {
 	    status: false,
 	    code: 403,
-	    message: '[!] Please Verify Email',
+	    message: '[!] Verifique o e-mail',
 }
 
 }
